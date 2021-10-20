@@ -11,7 +11,9 @@ class GetAirQualityController {
 
    async  handle(req:Request, res:Response) : Promise<Response>{
 
-        const {city, state} = req.headers
+        const {city, state} = req.body
+
+        console.log(city)
 
 
         try {

@@ -4,6 +4,8 @@ import { routesAirQuality } from './routes/airQuality.routes';
 
 const server = express();
 
+server.use(express.json())
+
 
 server.use('/air-quality', routesAirQuality)
 

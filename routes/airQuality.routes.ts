@@ -1,5 +1,4 @@
 import { Router } from "express";
-import https from "https"
 import { getAirQualityController } from "../src/modules/AirQuality/UseCase";
 
 const routesAirQuality = Router();
@@ -8,7 +7,7 @@ const routesAirQuality = Router();
  
 
 
-routesAirQuality.get('/',  (req, res) => {
+routesAirQuality.post('/',  (req, res) => {
 
     getAirQualityController.handle(req, res);
 
